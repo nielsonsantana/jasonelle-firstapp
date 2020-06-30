@@ -1,0 +1,35 @@
+{% extends "_base.html" %}
+
+{% block head %}
+  "head": {
+    "offline": "{{head_offline}}",
+    "title": "{{header_title}}",
+    "actions": {
+      {% include 'components/_actions.json' %}
+    }
+  }
+{% endblock %}
+
+{% block body %}
+  "body": {
+      "header": {
+        {% include 'components/_body_header.json' %}
+      },
+      "background": {
+          "type": "html",
+          "url":"{{base_url_app}}/page-home.html",
+          "action": {
+            "trigger": "navigate"
+          },
+          "style": {% include 'components/_background_style.json' %}
+      }
+  }
+{% endblock %}
+
+{% block footer %}
+  "footer": {
+    "tabs": {
+        {% filter indent(width=8) %} {% include 'components/_footer_tabs.json' %} {% endfilter %}
+    }
+  }
+{% endblock %}

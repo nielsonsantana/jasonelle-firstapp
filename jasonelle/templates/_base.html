@@ -1,0 +1,21 @@
+{
+    {% filter trim %}
+    "$jason": {
+        {# HEAD #}
+        {% filter indent(width=8)|trim %}{% block head %}{% endblock %}{% endfilter %},
+
+        {# BODY #}
+        {% filter indent(width=8)|trim %}
+        {% block body %}
+        "body": {}
+        {% endblock %}{% endfilter %},
+
+        {# FOOTER #}
+        {% filter indent(width=8)|trim %}
+        {% block footer %}
+        "footer": {}
+        {% endblock %}
+        {% endfilter %}
+    }
+    {% endfilter %}
+}

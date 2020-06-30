@@ -1,0 +1,118 @@
+{
+    "$jason": {
+        "head": {
+            "offline": "true", 
+            "title": "MyNewApplication", 
+            "actions": {
+                "$load": {
+                    "type": "$set", 
+                    "options": {
+                        "url": [
+                            {
+                                "{{#if $params && 'url' in $params}}": "{{$params.url}}"
+                            }, 
+                            {
+                                "{{#else}}": "https://www.google.com"
+                            }
+                        ]
+                    }, 
+                    "success": {
+                        "type": "$render"
+                    }
+                }, 
+                "navigate": {
+                    "type": "$href", 
+                    "options": {
+                        "url": "http://localhost.com:8080/json-jinja/output/native-transition.json", 
+                        "options": {
+                            "view": "app", 
+                            "url": "{{$jason.url}}"
+                        }
+                    }
+                }, 
+                "navigate_tab": {
+                    "type": "$href", 
+                    "options": {
+                        "url": "http://localhost.com:8080/json-jinja/output/native-transition.json", 
+                        "options": {
+                            "view": "app", 
+                            "url": "{{$jason.url}}"
+                        }
+                    }
+                }
+            }, 
+            "templates": {
+                "body": {
+                    "header": {
+                        "title": "MyNewApplication", 
+                        "style": {
+                            "theme": true
+                        }, 
+                        "menu": {
+                            "text": ":", 
+                            "style": {
+                                "color": "#0000ff", 
+                                "font": "HelveticaNeue-Bold", 
+                                "size": "17"
+                            }, 
+                            "action": {
+                                "type": "$util.toast", 
+                                "options": {
+                                    "text": "Good job!"
+                                }
+                            }
+                        }
+                    }, 
+                    "background": {
+                        "type": "html", 
+                        "url": "{{$get.url}}", 
+                        "action": {
+                            "trigger": "navigate"
+                        }, 
+                        "style": {
+                            "background": "rgba(247, 250, 252, 1)", 
+                            "progress": "rgba(247, 250, 252, 1)"
+                        }
+                    }, 
+                    "footer": {
+                        "tabs": {
+                            "style": {
+                                "background": "rgba(255,255,255,0.8)", 
+                                "color:disabled": "#cecece", 
+                                "color": "rgba(114, 192, 44, 1)"
+                            }, 
+                            "items": [
+                                {
+                                    "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/home.png", 
+                                    "text": "Home", 
+                                    "style": {
+                                        "height": "21"
+                                    }, 
+                                    "url": "http://localhost.com:8080/json-jinja/output/home.json"
+                                }, 
+                                {
+                                    "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/notifications.png", 
+                                    "text": "Notifications", 
+                                    "style": {
+                                        "height": "21"
+                                    }, 
+                                    "url": "http://localhost.com:8080/json-jinja/output/notifications.json"
+                                }, 
+                                {
+                                    "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/me.png", 
+                                    "text": "Account", 
+                                    "style": {
+                                        "height": "21"
+                                    }, 
+                                    "url": "http://localhost.com:8080/json-jinja/output/account.json"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }, 
+        "body": {}, 
+        "footer": {}
+    }
+}

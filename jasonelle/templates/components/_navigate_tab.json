@@ -1,0 +1,10 @@
+{
+    "type": "$href",
+    "options": {
+        "url": "{{base_url_jason}}/native-transition.json",
+        "options": {
+            "view": "app",
+            "url": {% raw %} "{{$jason.url}}" {% endraw %}
+        }
+    }
+}

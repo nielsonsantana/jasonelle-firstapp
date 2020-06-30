@@ -1,0 +1,19 @@
+
+"title": "{{header_title}}",
+"style": {
+  "theme": true
+},
+"menu": {
+  "text": ":",
+  "style": {
+    "color": "#0000ff",
+    "font": "HelveticaNeue-Bold",
+    "size": "17"
+  },
+  "action": {
+    "type": "$util.toast",
+    "options": {
+      "text": "Good job!"
+    }
+  }
+}

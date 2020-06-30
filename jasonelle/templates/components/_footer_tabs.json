@@ -1,0 +1,27 @@
+  "style": {
+    "background": "rgba(255,255,255,0.8)",
+    "color:disabled": "#cecece",
+    "color": "rgba(114, 192, 44, 1)"
+  },
+  "items": [{
+    "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/home.png",
+    "text": "Home",
+    "style": {
+      "height": "21"
+    },
+    "url": "{{base_url_jason}}/home.json"
+  }, {
+    "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/notifications.png",
+    "text": "Notifications",
+    "style": {
+      "height": "21"
+    },
+    "url": "{{base_url_jason}}/notifications.json"
+  }, {
+    "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/me.png",
+    "text": "Account",
+    "style": {
+      "height": "21"
+    },
+    "url": "{{base_url_jason}}/account.json"
+  }]

@@ -1,0 +1,17 @@
+"ahref_handler": [{
+    "type": "$href",
+    "options": {
+      "view": "app",
+      "url": {% raw %} "{{$jason.url}}" {% endraw %}
+    }
+  }
+],
+"navigate": {
+  "type": "$href",
+  "options": {
+      "url": "{{base_url_jason}}/native-transition.json",
+      "options": {
+        "url": {% raw %} "{{$jason.url}}" {% endraw %}
+    }
+  }
+}
