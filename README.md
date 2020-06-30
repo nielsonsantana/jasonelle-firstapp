@@ -6,6 +6,6 @@ To install staticjinja, simply:
 
 	$ pip install staticjinja
 
-To run:
+To generate jasonelle mobile app:
 	
 	$ python jasonelle/build.py

@@ -43,9 +43,9 @@ def recursive_pretty_json(directory):
 
 
 CONTEXT = {
-    'base_url_jason': "http://localhost.com:8080/json-jinja/output",
-    'base_url_app': "http://localhost.com:8080",
-    'header_title': "MyNewApplication",
+    'base_url_jason': "https://nielsonsantana.github.io/jasonelle-firstapp/jasonelle/output",
+    'base_url_app': "https://nielsonsantana.github.io/jasonelle-firstapp/website",
+    'header_title': "MyFirstApp",
     'head_offline': "true",
 }
 

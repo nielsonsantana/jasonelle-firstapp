@@ -2,7 +2,7 @@
     "$jason": {
         "head": {
             "offline": "true", 
-            "title": "MyNewApplication", 
+            "title": "MyFirstApp", 
             "actions": {
                 "ahref_handler": [
                     {
@@ -16,7 +16,7 @@
                 "navigate": {
                     "type": "$href", 
                     "options": {
-                        "url": "http://localhost.com:8080/json-jinja/output/native-transition.json", 
+                        "url": "https://nielsonsantana.github.io/jasonelle-firstapp/jasonelle/output/native-transition.json", 
                         "options": {
                             "url": "{{$jason.url}}"
                         }
@@ -26,7 +26,7 @@
         }, 
         "body": {
             "header": {
-                "title": "MyNewApplication", 
+                "title": "MyFirstApp", 
                 "style": {
                     "theme": true
                 }, 
@@ -71,7 +71,7 @@
                         "style": {
                             "height": "21"
                         }, 
-                        "url": "http://localhost.com:8080/json-jinja/output/home.json"
+                        "url": "https://nielsonsantana.github.io/jasonelle-firstapp/jasonelle/output/home.json"
                     }, 
                     {
                         "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/notifications.png", 
@@ -79,7 +79,7 @@
                         "style": {
                             "height": "21"
                         }, 
-                        "url": "http://localhost.com:8080/json-jinja/output/notifications.json"
+                        "url": "https://nielsonsantana.github.io/jasonelle-firstapp/jasonelle/output/notifications.json"
                     }, 
                     {
                         "image": "https://raw.githubusercontent.com/Jasonette/Twitter-UI-example/master/images/me.png", 
@@ -87,7 +87,7 @@
                         "style": {
                             "height": "21"
                         }, 
-                        "url": "http://localhost.com:8080/json-jinja/output/account.json"
+                        "url": "https://nielsonsantana.github.io/jasonelle-firstapp/jasonelle/output/account.json"
                     }
                 ]
             }
