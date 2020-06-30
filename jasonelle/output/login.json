@@ -47,7 +47,7 @@
             }, 
             "background": {
                 "type": "html", 
-                "text": "https://nielsonsantana.github.io/jasonelle-firstapp/website", 
+                "url": "https://nielsonsantana.github.io/jasonelle-firstapp/website/index.html", 
                 "action": {
                     "trigger": "navigate"
                 }, 
